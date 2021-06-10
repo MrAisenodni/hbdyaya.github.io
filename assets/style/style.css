@@ -17,6 +17,7 @@ body {
   overflow: hidden;
 }
 
+.container div.six-child,
 .container div.six {
   top: 10vh;
   z-index: 1;
@@ -109,7 +110,7 @@ body {
 }
 
 .idea-6 span {
-  font-size: 15rem;
+  font-size: 4rem;
 }
 
 .six {
@@ -123,6 +124,24 @@ body {
 }
 
 .six .hat {
+  position: absolute;
+  width: 80px;
+  top: -35px;
+  left: 41.5%;
+  /* transform: scale(0.1); */
+}
+
+.six-child {
+  position: relative;
+}
+
+.six-child img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.six-child .hat {
   position: absolute;
   width: 80px;
   top: -35px;
@@ -222,6 +241,16 @@ body {
   margin: 10px 0 0;
 }
 
+.nine button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background: green;
+  color: white;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
@@ -276,7 +305,7 @@ body {
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 4rem;
   }
 
   .six .hat {

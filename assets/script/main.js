@@ -139,31 +139,10 @@ const animationTimeline = () => {
     .to(".idea-3", 1.8, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 1.8, ideaTextTrans)
     .to(".idea-4", 1.8, ideaTextTransLeave, "+=1.5")
-    .staggerFrom(
-      ".idea-2 span",
-      1.2,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut
-      },
-      0.2
-    )
-    .staggerTo(
-      ".idea-2 span",
-      1.2,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut
-      },
-      0.2,
-      "+=1"
-    )
+    .from(".idea-5", 1.8, ideaTextTrans)
+    .to(".idea-5", 1.8, ideaTextTransLeave, "+=1.5")
     .from(
-      ".idea-5",
+      ".idea-6",
       1.8,
       {
         rotationX: 15,
@@ -176,7 +155,7 @@ const animationTimeline = () => {
       "+=1"
     )
     .to(
-      ".idea-5 span",
+      ".idea-6 span",
       1.8,
       {
         rotation: 90,
@@ -185,7 +164,7 @@ const animationTimeline = () => {
       "+=1.2"
     )
     .to(
-      ".idea-5",
+      ".idea-6",
       1.8,
       {
         scale: 0.2,
@@ -193,6 +172,10 @@ const animationTimeline = () => {
       },
       "+=2"
     )
+    .from(".idea-7", 1.8, ideaTextTrans)
+    .to(".idea-7", 1.8, ideaTextTransLeave, "+=1.5")
+    .from(".idea-8", 1.8, ideaTextTrans)
+    .to(".idea-8", 1.8, ideaTextTransLeave, "+=1.5")
     .staggerFromTo(
       ".baloons img",
       5,
@@ -218,12 +201,6 @@ const animationTimeline = () => {
       },
       "-=2"
     )
-    .from(".hat", 1, {
-      x: -100,
-      y: 350,
-      rotation: -180,
-      opacity: 0
-    })
     .staggerFrom(
       ".wish-hbd span",
       1.8,
@@ -263,17 +240,14 @@ const animationTimeline = () => {
       },
       "party"
     )
-    .staggerTo(
-      ".eight svg",
-      1.5,
+    .to(
+      ".wish h5 span",
+      1,
       {
-        visibility: "visible",
-        opacity: 0,
-        scale: 80,
-        repeat: 3,
-        repeatDelay: 1.8
+        rotation: 90,
+        x: 8
       },
-      0.6
+      "party"
     )
     .to(".six", 1, {
       opacity: 0,

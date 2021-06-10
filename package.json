@@ -16,17 +16,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/faahim/happy-birthday.git"
+    "url": "git+https://github.com/MrAisenodni/hbd-yaya.git"
   },
   "keywords": [
     "Happy",
     "Graduation"
   ],
-  "author": "Mochamad Ibnu Susanto",
+  "author": "Muhammad Fiqri Alfayed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/faahim/happy-birthday/issues"
+    "url": "https://github.com/MrAisenodni/hbd-yaya/issues"
   },
-  "homepage": "https://github.com/faahim/happy-birthday#readme",
+  "homepage": "https://github.com/MrAisenodni/hbd-yaya#readme",
   "dependencies": {}
 }
