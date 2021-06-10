@@ -245,23 +245,27 @@ const animationTimeline = () => {
       },
       "party"
     )
-    .to(
-      ".wish h5 span",
-      1,
-      {
-        rotation: 90,
-        x: 8
-      },
-      "party"
-    )
     .to(".six", 1, {
       opacity: 0,
       y: 30,
       zIndex: "-1"
     })
+    .staggerFromTo(
+      ".baloons img",
+      3,
+      {
+        opacity: 0.9,
+        y: 1400
+      },
+      {
+        opacity: 1,
+        y: -1000
+      },
+      0.2
+    )
     .from(
       ".yaya-dp",
-      1,
+      2,
       {
         scale: 3.5,
         opacity: 0,
@@ -272,18 +276,18 @@ const animationTimeline = () => {
       "-=2"
     )
     .from(
-      ".ten .wish h5",
-      1,
+      ".wishky h5",
+      4,
       {
         opacity: 0,
         y: 10,
         skewX: "-15deg"
       },
-      "party"
+      "cake"
     )
     .staggerFrom(
-      ".ten .wish-dbd span",
-      1.8,
+      ".wish-dbd span",
+      2.2,
       {
         opacity: 0,
         y: -50,
@@ -295,8 +299,8 @@ const animationTimeline = () => {
       0.1
     )
     .staggerFromTo(
-      ".ten .wish-dbd span",
-      1.8,
+      ".wish-dbd span",
+      2.2,
       {
         scale: 1.8,
         rotationY: 150
@@ -308,28 +312,9 @@ const animationTimeline = () => {
         ease: Expo.easeOut
       },
       0.1,
-      "party"
+      "cake"
     )
-    .from(
-      ".ten .wish h5",
-      1,
-      {
-        opacity: 0,
-        y: 10,
-        skewX: "-15deg"
-      },
-      "party"
-    )
-    .to(
-      ".ten .wish h5 span",
-      1,
-      {
-        rotation: 90,
-        x: 8
-      },
-      "party"
-    )
-    .to(".ten", 1, {
+    .to(".ten", 2, {
       opacity: 0,
       y: 30,
       zIndex: "-1"

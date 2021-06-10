@@ -105,6 +105,7 @@ body {
 
 .idea-5 span,
 .idea-6 span,
+.wish-dbd span,
 .wish-hbd span {
   display: inline-block;
 }
@@ -221,12 +222,14 @@ body {
   fill: #9a90da;
 }
 
+.wish-dbd,
 .wish-hbd {
   font-size: 3em;
   margin: 0;
   text-transform: uppercase;
 }
 
+.wishky h5, 
 .wish h5 {
   font-weight: lighter;
   font-size: 2rem;
@@ -244,7 +247,7 @@ body {
 }
 
 .nine p {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: lighter;
 }
 
@@ -305,16 +308,18 @@ body {
     top: -20px;
   }
 
+  .wish-dbd, 
   .wish-hbd {
     font-size: 2.2em;
   }
 
+  .wishky h5,
   .wish h5 {
     font-size: 1.4rem;
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
   }
 }
