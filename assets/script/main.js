@@ -3,6 +3,7 @@ const animationTimeline = () => {
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
+  const dbd = document.getElementsByClassName("wish-dbd")[0];
   const audio = new Audio('assets/mp3/Backsound.mpeg');
 
   audio.play();
@@ -12,6 +13,10 @@ const animationTimeline = () => {
     .join("</span><span>")}</span`;
 
   hbd.innerHTML = `<span>${hbd.innerHTML
+    .split("")
+    .join("</span><span>")}</span`;
+
+  dbd.innerHTML = `<span>${dbd.innerHTML
     .split("")
     .join("</span><span>")}</span`;
 
@@ -250,6 +255,81 @@ const animationTimeline = () => {
       "party"
     )
     .to(".six", 1, {
+      opacity: 0,
+      y: 30,
+      zIndex: "-1"
+    })
+    .from(
+      ".yaya-dp",
+      1,
+      {
+        scale: 3.5,
+        opacity: 0,
+        x: 25,
+        y: -25,
+        rotationZ: -45
+      },
+      "-=2"
+    )
+    .from(
+      ".ten .wish h5",
+      1,
+      {
+        opacity: 0,
+        y: 10,
+        skewX: "-15deg"
+      },
+      "party"
+    )
+    .staggerFrom(
+      ".ten .wish-dbd span",
+      1.8,
+      {
+        opacity: 0,
+        y: -50,
+        // scale: 0.6,
+        rotation: 150,
+        skewX: "30deg",
+        ease: Elastic.easeOut.config(1, 1)
+      },
+      0.1
+    )
+    .staggerFromTo(
+      ".ten .wish-dbd span",
+      1.8,
+      {
+        scale: 1.8,
+        rotationY: 150
+      },
+      {
+        scale: 1,
+        rotationY: 0,
+        color: "#ff69b4",
+        ease: Expo.easeOut
+      },
+      0.1,
+      "party"
+    )
+    .from(
+      ".ten .wish h5",
+      1,
+      {
+        opacity: 0,
+        y: 10,
+        skewX: "-15deg"
+      },
+      "party"
+    )
+    .to(
+      ".ten .wish h5 span",
+      1,
+      {
+        rotation: 90,
+        x: 8
+      },
+      "party"
+    )
+    .to(".ten", 1, {
       opacity: 0,
       y: 30,
       zIndex: "-1"

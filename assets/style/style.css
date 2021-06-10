@@ -17,7 +17,7 @@ body {
   overflow: hidden;
 }
 
-.container div.six-child,
+.container div.ten,
 .container div.six {
   top: 10vh;
   z-index: 1;
@@ -131,22 +131,14 @@ body {
   /* transform: scale(0.1); */
 }
 
-.six-child {
+.ten {
   position: relative;
 }
 
-.six-child img {
+.ten img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-}
-
-.six-child .hat {
-  position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
 }
 
 .baloons img {
@@ -242,12 +234,12 @@ body {
 }
 
 .nine button {
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
+  width: 170px;
+  height: 70px;
+  border-radius: 25px;
   background: green;
   color: white;
-  font-size: 18pt;
+  font-size: 14pt;
   font-weight: bold;
 }
 
